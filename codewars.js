@@ -1,7 +1,8 @@
-//Given a string of words (x), you need to return an array of the words, sorted alphabetically by the final character in each.
-//If two words have the same last letter, they returned array should show them in the order they appeared in the given string.
-//All inputs will be valid.
+//You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
+//Array can contain numbers or strings. X can be either.
+//Return true if the array contains the value, false if not.
 
-const last = words => words.split(' ').sort((a, b) => a.slice(-1) > b.slice(-1))
+const check = (a,x) => a.includes(x);
 
-console.log(last("hi my name is Rina"))
+console.log(check([1,2,3], 1))
+console.log(check([1,2,3], 4))

@@ -1,5 +1,5 @@
-// given messi's goals across three leagues, calculate his total goals
+// return the nth item in the array to the power of n. if nth item of the array does not exist return -1
 
-const goals = (laLigaGoals, copaDelReyGoals, championsLeagueGoals) => laLigaGoals + copaDelReyGoals + championsLeagueGoals
-
-console.log(goals(10,12,18))
+function index(array, n){
+  return array[n] ** n || -1;
+}
